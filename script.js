@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const particlesContainer = document.getElementById('particles-container');
 
     // --- Letter Content (Editable by user) ---
-    const letterContent = `Gửi Alex. Sắp tốt nghiệp gòi chăm chỉ học hành lênnnn nhéee. Pan hi vọng Alex ráng ráng trở thành cô giáo để chùi đít cho trẻ con nhé :)) \n Không chỉ 8/3 mà tất cả mọi người Alex đều xinh đẹp heee. Sắp trễ gòi lát Alex ngủ ngon mơ đẹp kaaka.`;
+    const letterContent = `Gửi Alex. Sắp tốt nghiệp gòi chăm chỉ học hành lênnnn nhéee. Pan hi vọng Alex ráng ráng trở thành cô giáo để chùi đít cho trẻ con nhé :)) \n Không chỉ 8/3 mà tất cả mọi ngày Alex đều xinh đẹp heee. Sắp trễ gòi lát Alex ngủ ngon mơ đẹp kaaka.`;
 
     // --- State Management ---
     const switchSection = (current, next) => {
