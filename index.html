@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet March 8th Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Background Elements -->
+    <div id="particles-container"></div>
+
+    <!-- 1. Envelope Section -->
+    <section id="envelope-section" class="active">
+        <div class="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter-preview">
+                    <p>Gửi người đẹp...</p>
+                </div>
+                <div class="heart" id="open-btn"></div>
+            </div>
+            <p class="instruction">Nhấn vào trái tim để mở thư nhé!</p>
+        </div>
+    </section>
+
+    <!-- 2. Main Content Section -->
+    <section id="main-content" class="hidden">
+        <div class="hero">
+            <h1 class="animate-title">Happy Women's Day</h1>
+            <p class="subtitle">Chúc mừng ngày Quốc tế Phụ nữ 8/3</p>
+        </div>
+
+        <div class="story-container">
+            <div id="story-carousel" class="story-carousel">
+                <!-- Slide 1 -->
+                <div class="story-slide active" id="slide-1">
+                    <div class="story-card no-image">
+                        <div class="story-content">
+                            <p>Chào nàng thơ! 8/3 này tuy chưa có hoa cầm tay, nhưng có "chút lòng thành" này gửi tặng
+                                người đẹp nè. 😉</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="story-slide" id="slide-2">
+                    <div class="story-card no-image">
+                        <div class="story-content">
+                            <p>Tuy hơi muộn nhưng chúc người đẹp cả năm heee.
+                                Ăn uốn đầy đủ hơn, chăm chỉ học hành nhéeeeee!!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="story-slide" id="slide-3">
+                    <div class="story-card no-image">
+                        <div class="story-content">
+                            <p>Nhiều lúc anh hay quên thiệt, là do anh nhớ em hết chỗ chứa gòi nên hong nhớ được gì nữa
+                                cơ =))
+                                Nếu mà có một ngày nào đó em buồn thì nhớ là đã từng có 1 Alex cười như này nhé. ()
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="story-slide" id="slide-4">
+                    <div class="story-card">
+                        <img src="khongcuoi.jpg" alt="Alex">
+                        <div class="story-content">
+                            <p>À không nhầm nhầm không phải</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="story-slide" id="slide-5">
+                    <div class="story-card">
+                        <img src="cuoi.jpg" alt="Alex cười">
+                        <div class="story-content">
+                            <p>Đây đây cái này nè xinh quéee</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="story-slide" id="slide-6">
+                    <div class="story-card no-image">
+                        <div class="story-content">
+                            <p>Lần sau gặp là có hoa bù nhéeee 🌸✨</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="story-controls">
+                <button id="prev-story" class="icon-btn">❮</button>
+                <div class="story-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                    <span class="dot" data-slide="5"></span>
+                </div>
+                <button id="next-story" class="icon-btn">❯</button>
+            </div>
+        </div>
+
+        <button id="show-letter-btn" class="glass-btn hidden">Tiếp tục hành trình...</button>
+    </section>
+
+    <!-- 3. Letter Section -->
+    <section id="letter-section" class="hidden">
+        <div class="paper-container">
+            <div id="typing-text" class="handwritten"></div>
+        </div>
+        <button id="show-photo-btn" class="glass-btn hidden">Và cuối cùng là...</button>
+    </section>
+
+    <!-- 4. Photo Section -->
+    <section id="photo-section" class="hidden">
+        <div class="photo-frame">
+            <img src="placeholder.jpg" alt="Memory Photo" id="memory-img">
+            <div class="sparkles"></div>
+        </div>
+        <div class="final-message">
+            <h2>Chúc mừng ngày 8/3 thật ý nghĩa nha!</h2>
+            <p>Mong là món quà nhỏ này làm cậu vui. 😊</p>
+        </div>
+        <button id="restart-btn" class="glass-btn">Xem lại từ đầu</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
